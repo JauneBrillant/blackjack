@@ -17,14 +17,15 @@ class Card {
   }
 }
 
-const card1 = new Card('H', 'A');
-console.log(card1.getRankNumber());
+// ---------------------- TEST -----------------------------
+// const card1 = new Card('H', 'A');
+// console.log(card1.getRankNumber());
 
-const card2 = new Card('D', '2');
-console.log(card2.getRankNumber());
+// const card2 = new Card('D', '2');
+// console.log(card2.getRankNumber());
 
-const card3 = new Card('C', '10');
-console.log(card3.getRankNumber());
+// const card3 = new Card('C', '10');
+// console.log(card3.getRankNumber());
 
-const card4 = new Card('S', 'K');
-console.log(card4.getRankNumber());
+// const card4 = new Card('S', 'K');
+// console.log(card4.getRankNumber());
