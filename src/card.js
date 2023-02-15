@@ -1,19 +1,15 @@
-class Card {
+export class Card {
   // const suit = ['H', 'D', 'C', 'S'];
-  // const rank = ['A', '2', '3', '4', '5', '6', '7', '8', '9, 10', 'J', 'Q', 'K'];
+  // const rank = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
   constructor(suit, rank) {
     this.suit = suit;
     this.rank = rank;
   }
 
   getRankNumber() {
-    if (this.rank == 'A') {
-      return 11; // 後で残りの手札を見て1か11にできるよう書き直す
-    } else if (2 <= this.rank && this.rank <= 10) {
-      return parseInt(this.rank);
-    } else {
-      return 10;
-    }
+    if (this.rank == "A") return 11;
+    else if (2 <= this.rank && this.rank <= 10) return parseInt(this.rank);
+    return 10;
   }
 }
 
